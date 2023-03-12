@@ -1,0 +1,10 @@
+1. On initial page view, atleast one unremovable tab should be displayed with its content.
+2. User should able to add tabs with content; When user clicks on add new tab then popup should appear with input details as TabName, TabContent(e.g text, image, static table) and Tab should be generated based on input provided. 
+3. User should able remove tab.
+4. User should able to see respective tab content upon tab single click
+5. User should able edit tab title; you can activate edit mode upon double click. Each Tab content pane should show random background color when user clicks on a tab.
+
+Please note:
+Create and maintain a JSON object for tab data(title, content). 
+Tab title/name shouldn’t be blank and can only accepts alphanumeric values; no special characters allowed.
+Dont focus on HTML and CSS much; make simple view.

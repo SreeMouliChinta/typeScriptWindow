@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs Task</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- <div class="container" style="display: none"> -->
+    <div class="container" id="main-page">
+      <section class="tabs" id="tab-group">
+        <div class="tab" id="tab1">
+          <caption>
+            Home Page
+          </caption>
+        </div>
+        <div class="tab" id="tab2">
+          <div id="tab-title2">New Tab 1</div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="closetab"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+              class="closetab-path"
+            />
+          </svg>
+        </div>
+        <div class="tab" id="tab3">
+          <div id="tab-title3">New Tab 2</div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="closetab"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+              class="closetab-path"
+            />
+          </svg>
+        </div>
+        <div class="tab" id="tab4">
+          <div id="tab-title4">New Tab 3</div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="closetab"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+              class="closetab-path"
+            />
+          </svg>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="newtab"
+          id="newtab-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 6v12m6-6H6"
+            id="newtab-icon"
+          />
+        </svg>
+      </section>
+      <section id="content" class="content">
+        ***HOME PAGE*** Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Ex magnam modiullam sapiente? Ipsum distinctio, esse, facilis
+        illo, quisquam recusandae molestiae aspernatur numquam tempora ullam
+        minima accusamusdelectus optio unde. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Consectetur eos neque veniam expedita
+        veritatis alias, ut doloribus nostrum sed animi ex modi eum accusamus
+        harum ad architecto cumque labore excepturi! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Dolorum, quo repellendus nam ipsam modi
+        culpa optio illum veniam accusantium doloremque soluta beatae nobis! Aut
+        sunt voluptatem non rerum. Voluptatem, architecto?
+      </section>
+    </div>
+
+    <!-- Name Change Input Form -->
+    <div id="edit-form" class="form-name-container" style="display: none">
+      <form class="form-name" onsubmit="event.preventDefault()">
+        <label for="edit-title-input" class="title-label new-label"></label>
+        <input
+          type="text"
+          class="newtab-newtitle"
+          id="edit-title-input"
+          placeholder="Enter New Name"
+          autocomplete="off"
+          required
+        />
+        <div class="form-name-button">
+          <button type="button" class="button submit" id="edit-btn-submit">
+            Save
+          </button>
+          <button type="button" class="button close" id="edit-btn-close">
+            Back
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Form -->
+    <div id="add-form" class="form-container" style="display: none">
+      <form class="form" onsubmit="event.preventDefault()">
+        <div class="form-caption">Enter New Tab Data</div>
+        <label for="new-tab-title" class="title-label new-label">Title</label>
+        <input
+          type="text"
+          class="newtab-title"
+          id="add-title-input"
+          autocomplete="off"
+          required
+        />
+        <label for="new-tab-content" class="new-content-label new-label"
+          >Tab Content</label
+        >
+        <textarea
+          id="add-content-input"
+          class="newtab-content"
+          name="new-tab-content"
+          rows="7"
+          cols="20"
+          placeholder="Tab Content here..."
+        ></textarea>
+        <div class="form-button">
+          <button type="button" class="button submit" id="add-btn-submit">
+            Submit
+          </button>
+          <button type="button" class="button close" id="add-btn-close">Back</button>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

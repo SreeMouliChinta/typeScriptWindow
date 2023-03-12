@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.container {
+  border: 2px solid black;
+  min-height: 80vh;
+  width: 80vw;
+}
+
+.tabs {
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: auto;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.tab {
+  user-select: none;
+  padding: 1rem;
+  border: 2px solid black;
+  height: 2.4rem;
+  min-width: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tab:nth-child(1) {
+  margin-left: 0;
+}
+
+.newtab {
+  width: 3rem;
+  cursor: pointer;
+}
+
+.closetab {
+  width: 1rem;
+  cursor: pointer;
+}
+
+.content {
+  margin: 2rem;
+  padding: 1rem;
+  text-align: justify;
+  border: 2px solid black;
+  height: 50rem;
+}
+
+.form-container,
+.form-name-container {
+  border: 2px solid black;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-size: 2rem;
+}
+
+.form-caption {
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
+  background-color: #e7e7e7;
+  text-align: center;
+  /* text-transform: uppercase; */
+  height: 5rem;
+  font-size: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form,
+.form-name {
+  padding: 2rem;
+}
+
+input {
+  padding: 0.5rem;
+  font-family: inherit;
+  display: block;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+}
+
+.newtab-newtitle {
+  text-align: center;
+  width: 100%;
+}
+
+.newtab-title {
+  width: 15rem;
+}
+
+.newtab-content {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid black;
+}
+
+button {
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: inline-block;
+}
+
+.form-button,
+.form-name-button {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.button {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 0rem;
+}
+
+.submit,
+.close {
+  background-color: #d7d7d7;
+}
+
+.submit:hover,
+.close:hover {
+  background-color: #c6c6c6;
+}
